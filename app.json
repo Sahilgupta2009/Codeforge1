@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "CodeForge",
+    "slug": "codeforge-editor",
+    "version": "0.1.0",
+    "orientation": "default",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "dev.codeforge.editor",
+      "versionCode": 1,
+      "adaptiveIcon": {
+          "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#1e1e1e"
+      },
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET",
+        "android.permission.QUERY_ALL_PACKAGES",
+        "com.termux.permission.RUN_COMMAND"
+      ],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "category": ["DEFAULT", "BROWSABLE"],
+          "data": { "scheme": "codeforge" }
+        }
+      ]
+    },
+    "plugins": [
+      "expo-file-system",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#1e1e1e"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0cc0cdf3-d265-4aa9-96b4-e9abf42f8ad8"
+      }
+    },
+    "scheme": "codeforge"
+  }
+}
