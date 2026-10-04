@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "CodeForge",
-    "slug": "codeforge-editor",
+    "slug": "codeforge",
     "version": "0.1.0",
     "orientation": "default",
     "icon": "./assets/images/icon.png",
